@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A letter for you</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Kalam:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" id="stars" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <header>
+    <h1>Happy birthday<span>& happy graduation</span></h1>
+    <p>Two reasons to celebrate, one letter.</p>
+  </header>
+
+  <div class="stage" id="stage">
+    <button class="envelope" id="envelope" aria-label="Open the letter" aria-expanded="false">
+      <div class="peek" aria-hidden="true">
+        <div class="half p1"></div>
+        <div class="half p2">
+          <i class="face front"></i><i class="face back"></i>
+        </div>
+      </div>
+      <div class="pocket"></div>
+      <div class="flap">
+        <div class="seal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#5c4510" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="hint">Tap to open</div>
+    </button>
+  </div>
+
+  <div class="reader" id="reader" role="dialog" aria-label="Your letter">
+    <article class="letter" id="letter">
+      <svg class="cap" viewBox="0 0 100 100" aria-hidden="true">
+        <polygon points="50,14 96,32 50,50 4,32" fill="#17213a"/>
+        <path d="M24 40 v18 c0 8 52 8 52 0 V40 L50 50z" fill="#24314f"/>
+        <circle cx="50" cy="32" r="3" fill="#d4af37"/>
+        <g class="tassel">
+          <path d="M50 32 L64 30 L66 62" stroke="#d4af37" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <path d="M62 60 h8 l-1 14 h-6z" fill="#d4af37"/>
+        </g>
+      </svg>
+
+      <p class="date" id="date">September 11, 2026</p>
+      <h2>Dear Lei,</h2>
+      <p>Happy happy birthday sayo! Another year older, and another milestone to celebrate because you're also finally a graduate! I'm really really proud of you and everything that you've accomplished.</p>
+      <p>Sa totoo lang, I'm really grateful and blessed to have someone like you in my life. I'm also thankful for all the memories, kwentuhan, tawanan, discord calls at sa mga game session natin tsaka na rin sa mga random moments na somehow naging memorable. I'm really happy that I got the chance to know you and be part of your life.</p>
+      <p>Alam ko hindi naging madali yung journey mo. There were probably a lot of times na napagod ka, na-stress, nag-doubt sa sarili mo, or even felt like giving up, pero despite all of that, you still managed to push through and make it this far. And now, seeing you finally graduate makes me genuinely happy and proud of you.</p>
+      <p>Sorry if wala ako noong graduation mo. I really wanted to witness that, kasi nandoon ka noong grumaduate ako, and it's only right na nandoon din ako sa graduation mo. Kaso things didn't go as planned, pero despite that, I'm really happy to see you graduate.</p>
+      <p>Deserve na deserve mong i-celebrate this moment because all your hard work, sacrifices, sleepless nights, deadlines, and everything you went through finally paid off. This may be the end of your student era, pero it's also the beginning of a new chapter filled with so many opportunities, experiences, and memories.</p>
+      <p>As you start this new chapter, I hope you continue to chase the things that make you happy and never be afraid to dream bigger. You don't have to have everything figured out right away. Take your time, enjoy the journey, and always believe in yourself. Sana ma-achieve mo lahat ng goals and dreams mo, and sana maging proud ka rin sa sarili mo just like how the people who care about you are proud of you today.</p>
+      <div class="sign">
+        <p style="margin:0">Always rooting for you,</p>
+        <strong>AD</strong>
+      </div>
+      <p class="close-hint">Tap anywhere to close</p>
+    </article>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
